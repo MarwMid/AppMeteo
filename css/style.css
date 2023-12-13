@@ -1,0 +1,68 @@
+body{
+    background-color: #2E4C6D; 
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+}
+
+#champMeteo{
+    width: 32.4375rem;
+    height: 29.6875rem;
+    border-radius: 1.375rem;
+    border: 1px solid #DADDFC;
+    background: rgba(57, 110, 176, 0.65);
+    box-sizing: border-box;
+    margin: 7.2rem 28.8rem 7.1rem 31.25rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #FC997C;
+}
+
+#retour{
+    width: 100%;
+    border-bottom: 1px solid #DADDFC;
+    text-align: left;
+    height: 3rem;
+}
+
+#fleche{
+    padding: 1rem 0 0 1rem;
+}
+
+#infoSup{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#imgSky{
+    height: 5.2rem;
+    width: 5.2rem;
+}
+
+#meteo {
+    display:flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+}
+
+#temperature{
+    font-size: 2rem;
+}
+
+#sky{
+    font-size: 1.525rem;
+}
+
+#humidWind{
+    border-top: 1px solid #DADDFC;
+    border-right: 1px solid #DADDFC;
+    flex-grow: 2;
+}
+
+#wind{
+    margin-right: 1rem;
+}
+
+#dateHeure {
+    flex-grow: 1;
+    border-top: 1px solid #DADDFC;
+}
