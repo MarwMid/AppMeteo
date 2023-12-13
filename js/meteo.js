@@ -80,11 +80,11 @@ function createFetch() {
 };
 
 function hover(element){
-    element.setAttribute('src', '/icones/Fleche-hover.png');
+    element.setAttribute('src', 'icones/Fleche-hover.png');
 }
 
 function unhover(element){
-    element.setAttribute('src', '/icones/Fleche.png');
+    element.setAttribute('src', 'icones/Fleche.png');
 }
 
 clock();
