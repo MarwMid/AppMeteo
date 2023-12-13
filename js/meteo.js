@@ -18,7 +18,6 @@ if(m == "00" && j == 0) {
     createFetch();
     j++;
     console.log("j =" + j);
-    setTimeout(createFetch, 60000);
 };
 
 if(m == "01") {
@@ -30,7 +29,7 @@ document.getElementById("date").innerHTML = date;
 };
 
 function createFetch() {
-    fetch('/js/conf.json')
+    fetch('js/conf.json')
     .then(conf => conf.json())
     .then(ville => {
         if(ville != ""){
