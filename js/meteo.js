@@ -76,7 +76,7 @@ function createFetch() {
 })
 .catch(error => {
     console.log("Problème de ville");
-    alert("Je suis navré mais il y a un problème dans l'accès aux informations de la ville.")})
+    alert("Je suis navré mais il y a un problème dans l'accès à la totalité des informations.")})
 };
 
 function hover(element){
