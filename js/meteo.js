@@ -29,7 +29,11 @@ document.getElementById("date").innerHTML = date;
 };
 
 function createFetch() {
-    fetch('js/conf.json')
+    fetch('js/conf.json', {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+        },})
     .then(conf => conf.json())
     .then(ville => {
         if(ville != ""){
