@@ -17,11 +17,12 @@ let date = d.toLocaleDateString('fr-FR', {
 if(m == "00" && j == 0) {
     createFetch();
     j++;
-    console.log("j =" + j);
+    console.log("j = " + j);
 };
 
-if(m == "01") {
-    j--
+if(m == "01" && j > 0) {
+    j--;
+    console.log("j = " + j);
 };
 
 document.getElementById("heure").innerHTML = heure;
