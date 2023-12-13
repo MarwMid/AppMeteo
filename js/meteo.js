@@ -29,11 +29,7 @@ document.getElementById("date").innerHTML = date;
 };
 
 function createFetch() {
-    fetch('js/conf.json', {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-        },})
+    fetch('js/conf.json')
     .then(conf => conf.json())
     .then(ville => {
         if(ville != ""){
@@ -73,8 +69,14 @@ function createFetch() {
                     console.log(img.src);
                     console.log(meteo)
         })
+        .catch(error => {
+            console.log("Problème de météo");
+            alert("Je suis navré mais je ne peux accéder aux informations de météo.")})
     }
 })
+.catch(error => {
+    console.log("Problème de ville");
+    alert("Je suis navré mais il y a un problème dans l'accès aux informations de la ville.")})
 };
 
 function hover(element){
